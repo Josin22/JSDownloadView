@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/Josin22/JSDownloadView"
   s.license      = "MIT"
   s.author       = { "Josin" => "josin.mc@gmail.com" }
-  s.source       = { :git => "https://github.com/Josin22/JSDownloadView.git", :tag => s.version  }
+  s.source       = { :git => "https://github.com/Josin22/JSDownloadView.git", :tag => "1.0" }
  
-  s.source_files = "JSDownloadView"
+  s.source_files = "JSDownloadView/"
   
   s.ios.deployment_target = '8.0'
   
