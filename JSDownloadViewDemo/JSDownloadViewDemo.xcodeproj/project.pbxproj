@@ -24,7 +24,7 @@
 		5479EF511D75C1A30008C844 /* JSAnimationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnimationService.m; sourceTree = "<group>"; };
 		5479EF521D75C1A30008C844 /* JSDownloadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDownloadView.h; sourceTree = "<group>"; };
 		5479EF531D75C1A30008C844 /* JSDownloadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDownloadView.m; sourceTree = "<group>"; };
-		54AEF5191D71789700666A6C /* JSDownloadView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSDownloadView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AEF5191D71789700666A6C /* JSDownloadViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSDownloadViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AEF51D1D71789700666A6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54AEF51F1D71789700666A6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54AEF5201D71789700666A6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		54AEF51A1D71789700666A6C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				54AEF5191D71789700666A6C /* JSDownloadView.app */,
+				54AEF5191D71789700666A6C /* JSDownloadViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,9 +105,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		54AEF5181D71789700666A6C /* JSDownloadView */ = {
+		54AEF5181D71789700666A6C /* JSDownloadViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54AEF5301D71789700666A6C /* Build configuration list for PBXNativeTarget "JSDownloadView" */;
+			buildConfigurationList = 54AEF5301D71789700666A6C /* Build configuration list for PBXNativeTarget "JSDownloadViewDemo" */;
 			buildPhases = (
 				54AEF5151D71789700666A6C /* Sources */,
 				54AEF5161D71789700666A6C /* Frameworks */,
@@ -117,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = JSDownloadView;
+			name = JSDownloadViewDemo;
 			productName = JSDownloadView;
-			productReference = 54AEF5191D71789700666A6C /* JSDownloadView.app */;
+			productReference = 54AEF5191D71789700666A6C /* JSDownloadViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +136,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 54AEF5141D71789700666A6C /* Build configuration list for PBXProject "JSDownloadView" */;
+			buildConfigurationList = 54AEF5141D71789700666A6C /* Build configuration list for PBXProject "JSDownloadViewDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -149,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				54AEF5181D71789700666A6C /* JSDownloadView */,
+				54AEF5181D71789700666A6C /* JSDownloadViewDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -291,7 +291,7 @@
 				INFOPLIST_FILE = JSDownloadView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyd.JSDownloadView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JSDownloadViewDemo;
 			};
 			name = Debug;
 		};
@@ -302,14 +302,14 @@
 				INFOPLIST_FILE = JSDownloadView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyd.JSDownloadView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JSDownloadViewDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		54AEF5141D71789700666A6C /* Build configuration list for PBXProject "JSDownloadView" */ = {
+		54AEF5141D71789700666A6C /* Build configuration list for PBXProject "JSDownloadViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54AEF52E1D71789700666A6C /* Debug */,
@@ -318,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54AEF5301D71789700666A6C /* Build configuration list for PBXNativeTarget "JSDownloadView" */ = {
+		54AEF5301D71789700666A6C /* Build configuration list for PBXNativeTarget "JSDownloadViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54AEF5311D71789700666A6C /* Debug */,
