@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		546B78581D72E45400BC02B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546B78571D72E45400BC02B9 /* QuartzCore.framework */; };
-		5479EF541D75C1A30008C844 /* JSAnimationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5479EF511D75C1A30008C844 /* JSAnimationService.m */; };
-		5479EF551D75C1A30008C844 /* JSDownloadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5479EF531D75C1A30008C844 /* JSDownloadView.m */; };
+		5479EF5B1D75C3FD0008C844 /* JSAnimationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5479EF581D75C3FD0008C844 /* JSAnimationService.m */; };
+		5479EF5C1D75C3FD0008C844 /* JSDownloadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5479EF5A1D75C3FD0008C844 /* JSDownloadView.m */; };
 		54AEF51E1D71789700666A6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEF51D1D71789700666A6C /* main.m */; };
 		54AEF5211D71789700666A6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEF5201D71789700666A6C /* AppDelegate.m */; };
 		54AEF5241D71789700666A6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEF5231D71789700666A6C /* ViewController.m */; };
@@ -20,10 +20,10 @@
 
 /* Begin PBXFileReference section */
 		546B78571D72E45400BC02B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		5479EF501D75C1A30008C844 /* JSAnimationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnimationService.h; sourceTree = "<group>"; };
-		5479EF511D75C1A30008C844 /* JSAnimationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnimationService.m; sourceTree = "<group>"; };
-		5479EF521D75C1A30008C844 /* JSDownloadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDownloadView.h; sourceTree = "<group>"; };
-		5479EF531D75C1A30008C844 /* JSDownloadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDownloadView.m; sourceTree = "<group>"; };
+		5479EF571D75C3FD0008C844 /* JSAnimationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnimationService.h; sourceTree = "<group>"; };
+		5479EF581D75C3FD0008C844 /* JSAnimationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnimationService.m; sourceTree = "<group>"; };
+		5479EF591D75C3FD0008C844 /* JSDownloadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDownloadView.h; sourceTree = "<group>"; };
+		5479EF5A1D75C3FD0008C844 /* JSDownloadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDownloadView.m; sourceTree = "<group>"; };
 		54AEF5191D71789700666A6C /* JSDownloadViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSDownloadViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AEF51D1D71789700666A6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54AEF51F1D71789700666A6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,16 +48,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5479EF4F1D75C1A30008C844 /* DownloadView */ = {
+		5479EF561D75C3FD0008C844 /* JSDownloadView */ = {
 			isa = PBXGroup;
 			children = (
-				5479EF501D75C1A30008C844 /* JSAnimationService.h */,
-				5479EF511D75C1A30008C844 /* JSAnimationService.m */,
-				5479EF521D75C1A30008C844 /* JSDownloadView.h */,
-				5479EF531D75C1A30008C844 /* JSDownloadView.m */,
+				5479EF571D75C3FD0008C844 /* JSAnimationService.h */,
+				5479EF581D75C3FD0008C844 /* JSAnimationService.m */,
+				5479EF591D75C3FD0008C844 /* JSDownloadView.h */,
+				5479EF5A1D75C3FD0008C844 /* JSDownloadView.m */,
 			);
-			name = DownloadView;
-			path = ../../DownloadView;
+			name = JSDownloadView;
+			path = ../../JSDownloadView;
 			sourceTree = "<group>";
 		};
 		54AEF5101D71789700666A6C = {
@@ -80,7 +80,7 @@
 		54AEF51B1D71789700666A6C /* JSDownloadView */ = {
 			isa = PBXGroup;
 			children = (
-				5479EF4F1D75C1A30008C844 /* DownloadView */,
+				5479EF561D75C3FD0008C844 /* JSDownloadView */,
 				54AEF51F1D71789700666A6C /* AppDelegate.h */,
 				54AEF5201D71789700666A6C /* AppDelegate.m */,
 				54AEF5221D71789700666A6C /* ViewController.h */,
@@ -173,8 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54AEF5241D71789700666A6C /* ViewController.m in Sources */,
-				5479EF551D75C1A30008C844 /* JSDownloadView.m in Sources */,
-				5479EF541D75C1A30008C844 /* JSAnimationService.m in Sources */,
+				5479EF5C1D75C3FD0008C844 /* JSDownloadView.m in Sources */,
+				5479EF5B1D75C3FD0008C844 /* JSAnimationService.m in Sources */,
 				54AEF5211D71789700666A6C /* AppDelegate.m in Sources */,
 				54AEF51E1D71789700666A6C /* main.m in Sources */,
 			);
