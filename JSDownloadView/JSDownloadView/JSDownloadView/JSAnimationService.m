@@ -270,15 +270,33 @@ static  NSString *keyPath_ContentW = @"contentsRect.size.width";
     return progressAnimation;
 }
 
-- (CAKeyframeAnimation *)getLineToSuccessAnimationWithValues:(NSArray *)values{
+- (CAAnimationGroup *)getLineToSuccessAnimationWithValues:(NSArray *)values{
     
     CAKeyframeAnimation *lineToSuccessAnimation = [CAKeyframeAnimation animationWithKeyPath:keyPath_Path];
     lineToSuccessAnimation.values = values;
     lineToSuccessAnimation.duration = .6;
     lineToSuccessAnimation.removedOnCompletion = NO;
     lineToSuccessAnimation.fillMode  = kCAFillModeForwards;
+    lineToSuccessAnimation.beginTime = 0;
     lineToSuccessAnimation.timingFunction  = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    return lineToSuccessAnimation;
+    
+    CASpringAnimation *successSpring = [CASpringAnimation animationWithKeyPath:keyPath_Scale];
+    successSpring.fromValue = @1.3;
+    successSpring.toValue = @1;
+    successSpring.damping = 10;
+    successSpring.mass = 1;
+    successSpring.initialVelocity = 0;
+    successSpring.beginTime= 0.60;
+    successSpring.removedOnCompletion = NO;
+    successSpring.fillMode = kCAFillModeForwards;
+    
+    CAAnimationGroup *group = [CAAnimationGroup animation];
+    group.animations = @[lineToSuccessAnimation,successSpring];
+    group.duration  = 2;
+    group.removedOnCompletion = NO;
+    group.fillMode  = kCAFillModeForwards;
+    
+    return group;
 }
 
 - (CGRect)getProgressRect{

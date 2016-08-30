@@ -47,7 +47,7 @@ static NSString  * kSuccessAnimationKey = @"kSuccessAnimationKey";
 
 - (CASpringAnimation *)getProgressAnimationShow:(BOOL)isShow;
 
-- (CAKeyframeAnimation *)getLineToSuccessAnimationWithValues:(NSArray *)values;
+- (CAAnimationGroup *)getLineToSuccessAnimationWithValues:(NSArray *)values;
 
 - (CGRect)getProgressRect;
 

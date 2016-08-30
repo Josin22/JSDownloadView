@@ -278,12 +278,16 @@
     
 //    self.arrowLayer.path = self.service.arrowEndPath.CGPath;
     
-    CAKeyframeAnimation *animation = [self.service getLineToSuccessAnimationWithValues:@[
-                                                                                         (__bridge id)self.service.arrowEndPath.CGPath,
-                                                                                         (__bridge id)self.service.succesPath.CGPath
-                                                                                         ]];
+//    CAKeyframeAnimation *animation = [self.service getLineToSuccessAnimationWithValues:@[
+//                                                                                         (__bridge id)self.service.arrowEndPath.CGPath,
+//                                                                                         (__bridge id)self.service.succesPath.CGPath
+//                                                                                         ]];
+    CAAnimationGroup *group = [self.service getLineToSuccessAnimationWithValues:@[
+                                                                                  (__bridge id)self.service.arrowEndPath.CGPath,
+                                                                                  (__bridge id)self.service.succesPath.CGPath
+                                                                                  ]];
     
-    [self.arrowLayer addAnimation:animation forKey:kSuccessAnimationKey];
+    [self.arrowLayer addAnimation:group forKey:kSuccessAnimationKey];
     
 }
 
