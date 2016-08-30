@@ -4,7 +4,7 @@
 //
 //  Created by 乔同新 on 16/8/27.
 //  Copyright © 2016年 乔同新. All rights reserved.
-//
+//https://github.com/Josin22/JSDownloadView
 
 #import <UIKit/UIKit.h>
 
@@ -20,13 +20,12 @@
  */
 @property (nonatomic, assign) CGFloat progressWidth;
 /**
- *  block 形式点击回调  
- */
-//@property (nonatomic, strong) void (^ didClickBlock)();
-
-/**
  *  停止动画
  */
 - (void)stopAllAnimations;
+/**
+ *  block 形式点击回调
+ */
+//@property (nonatomic, strong) void (^ didClickBlock)();
 
 @end
