@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		546B78581D72E45400BC02B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546B78571D72E45400BC02B9 /* QuartzCore.framework */; };
+		5479EF4E1D7558300008C844 /* JSAnimationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5479EF4D1D7558300008C844 /* JSAnimationService.m */; };
 		54AEF51E1D71789700666A6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEF51D1D71789700666A6C /* main.m */; };
 		54AEF5211D71789700666A6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEF5201D71789700666A6C /* AppDelegate.m */; };
 		54AEF5241D71789700666A6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEF5231D71789700666A6C /* ViewController.m */; };
@@ -19,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		546B78571D72E45400BC02B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5479EF4C1D7558300008C844 /* JSAnimationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnimationService.h; sourceTree = "<group>"; };
+		5479EF4D1D7558300008C844 /* JSAnimationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnimationService.m; sourceTree = "<group>"; };
 		54AEF5191D71789700666A6C /* JSDownloadView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSDownloadView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AEF51D1D71789700666A6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54AEF51F1D71789700666A6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,8 +73,8 @@
 				54AEF5201D71789700666A6C /* AppDelegate.m */,
 				54AEF5221D71789700666A6C /* ViewController.h */,
 				54AEF5231D71789700666A6C /* ViewController.m */,
-				54AEF5251D71789700666A6C /* Main.storyboard */,
 				54AEF5281D71789700666A6C /* Assets.xcassets */,
+				54AEF5251D71789700666A6C /* Main.storyboard */,
 				54AEF52A1D71789700666A6C /* LaunchScreen.storyboard */,
 				54AEF52D1D71789700666A6C /* Info.plist */,
 				54AEF51C1D71789700666A6C /* Supporting Files */,
@@ -92,6 +95,8 @@
 			children = (
 				54AEF5341D7178D100666A6C /* JSDownloadView.h */,
 				54AEF5351D7178D100666A6C /* JSDownloadView.m */,
+				5479EF4C1D7558300008C844 /* JSAnimationService.h */,
+				5479EF4D1D7558300008C844 /* JSAnimationService.m */,
 			);
 			path = JSDownloadView;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54AEF5241D71789700666A6C /* ViewController.m in Sources */,
+				5479EF4E1D7558300008C844 /* JSAnimationService.m in Sources */,
 				54AEF5211D71789700666A6C /* AppDelegate.m in Sources */,
 				54AEF51E1D71789700666A6C /* main.m in Sources */,
 				54AEF5361D7178D100666A6C /* JSDownloadView.m in Sources */,

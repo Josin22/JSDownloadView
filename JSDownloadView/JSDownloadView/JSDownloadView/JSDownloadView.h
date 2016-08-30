@@ -10,7 +10,7 @@
 
 #define XNColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
-@interface JSDownloadView : UIView
+@interface JSDownloadView : UIControl
 /**
  *  进度:0~1
  */
@@ -19,10 +19,14 @@
  *  进度宽
  */
 @property (nonatomic, assign) CGFloat progressWidth;
+/**
+ *  block 形式点击回调  
+ */
+//@property (nonatomic, strong) void (^ didClickBlock)();
 
 /**
- *  点击回调
+ *  停止动画
  */
-@property (nonatomic, strong) void (^ didClickBlock)();
+- (void)stopAllAnimations;
 
 @end

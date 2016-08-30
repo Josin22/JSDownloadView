@@ -13,7 +13,7 @@
 {
     NSTimer *_timer;
     double _timeCount;
-    CGFloat progress;
+    CGFloat _progress;
 }
 @property (nonatomic, strong) JSDownloadView *downloadView;
 
@@ -26,34 +26,43 @@
     
     self.view.backgroundColor = XNColor(41, 158, 239, 1);
     
+    [self initData];
+    
     [self.view addSubview:({
         JSDownloadView *downloadView = [[JSDownloadView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.frame)/2-50, CGRectGetHeight(self.view.frame)/2-50, 100, 100)];
-        downloadView.didClickBlock = ^{
-            
-            _timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(timeDown) userInfo:nil repeats:YES];
-        };
+//        downloadView.didClickBlock = ^{
+//            
+//            _timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(timeDown) userInfo:nil repeats:YES];
+//        };
+        [downloadView addTarget:self action:@selector(updateProgress) forControlEvents:UIControlEventTouchUpInside];
         downloadView.progressWidth = 4;
         self.downloadView = downloadView;
         self.downloadView;
     })];
-    
-    _timeCount = 50.0;
-    progress = 0.0;
-    
+
 }
 
+- (void)initData{
+    _timeCount = 200.0;
+    _progress = 0.0;
+}
 
 // 模拟网络请求数据进度
 - (void)timeDown{
     _timeCount -= 1;
-    progress += 0.02;
-    self.downloadView.progress  = progress;
+    _progress += 0.005;
+    self.downloadView.progress  = _progress;
     
     if (_timeCount <= 0) {
-        _timeCount = 50.0;
-        progress = 0.0;
+        
+        [self initData];
         [_timer invalidate];
+        _timer = nil;
     }
+}
+
+- (void)updateProgress{
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(timeDown) userInfo:nil repeats:YES];
 }
 
 @end
