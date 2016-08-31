@@ -1,4 +1,4 @@
-[![header](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadView/Source/download_icon.png)](http://qiaotongxin.cc)
+[![header](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download_icon.png)](http://qiaotongxin.cc)
 # JSDownloadView
 [![GitHub license](https://img.shields.io/badge/platform-ios-green.svg
 )](https://github.com/josin22/JSDownloadView)
@@ -9,7 +9,7 @@
 
 # 设计灵感
 设计此效果的作者 [Nick](https://material.uplabs.com/nickbuturisvili);
-![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadView/Source/download.gif)
+![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download.gif)
 
 
 # 开始之前你需要了解的
@@ -21,14 +21,14 @@
 # 怎样分解动画
 
 关于分解gif,其实用mac 预览 开发gif文件,就可以看到所有帧的图片.
-![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadView/Source/fenjie_download.png)
+![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/fenjie_download.png)
 
 选取其中几张动画节点的图片存好备用.比如:
-![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadView/Source/download1.png)
-![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadView/Source/download2.png)
-![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadView/Source/download3.png)
-![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadView/Source/download4.png)
-![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadView/Source/download5.png)
+![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download1.png)
+![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download2.png)
+![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download3.png)
+![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download4.png)
+![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download5.png)
 
 考虑到适配问题service类里已经提取好了.
 
@@ -177,7 +177,7 @@
 	 */
 	//@property (nonatomic, strong) void (^ didClickBlock)();
 ### 所有方法预览
-![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadView/Source/download_all.png)
+![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download_all.png)
 
 方法比较多,在这不一一展示了,有感兴趣的童鞋可以直接去[github下载](https://github.com/Josin22/JSDownloadView),记得点个星星哦~~~😜
 
@@ -213,7 +213,7 @@
 
 现实与理想还是有些差距,希望不是很大,在此分享一下自己研究的经验,有任何问题都可以Issues我,
 
-![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadView/Source/download_animation.gif)
+![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download_animation.gif)
 
 
 
