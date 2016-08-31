@@ -14,7 +14,7 @@
 
 # 开始之前你需要了解的
 先上一张CAAnimation层次图:
-![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadView/Source/caanimation.png)
+![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/caanimation.png)
 
 图上只是一些类的常用属性,后边更多代码会讲到.
 
