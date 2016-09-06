@@ -7,6 +7,12 @@
 [![CocoaPods Compatible](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/josin22/JSDownloadView)
 
 
+# 安装
+支持pod 安装
+
+	pod 'JSDownloadView'
+	
+
 # 设计灵感
 设计此效果的作者 [Nick](https://material.uplabs.com/nickbuturisvili);
 ![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download.gif)
