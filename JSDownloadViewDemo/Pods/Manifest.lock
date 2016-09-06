@@ -1,0 +1,12 @@
+PODS:
+  - JSDownloadView (1.0.0)
+
+DEPENDENCIES:
+  - JSDownloadView
+
+SPEC CHECKSUMS:
+  JSDownloadView: 50defda5b46edc7d589a5668efd430de014b3fa3
+
+PODFILE CHECKSUM: 05c2a60fa4ae400c1724ff026dfc12180c28e443
+
+COCOAPODS: 1.0.1

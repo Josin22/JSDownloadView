@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25687B9D0E57FBC06FA3B00B /* libPods-JSDownloadViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7353F0F09507E2C8FAD4EB /* libPods-JSDownloadViewDemo.a */; };
 		546B78581D72E45400BC02B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546B78571D72E45400BC02B9 /* QuartzCore.framework */; };
-		5479EF5B1D75C3FD0008C844 /* JSAnimationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5479EF581D75C3FD0008C844 /* JSAnimationService.m */; };
-		5479EF5C1D75C3FD0008C844 /* JSDownloadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5479EF5A1D75C3FD0008C844 /* JSDownloadView.m */; };
 		54AEF51E1D71789700666A6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEF51D1D71789700666A6C /* main.m */; };
 		54AEF5211D71789700666A6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEF5201D71789700666A6C /* AppDelegate.m */; };
 		54AEF5241D71789700666A6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEF5231D71789700666A6C /* ViewController.m */; };
@@ -19,11 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E7353F0F09507E2C8FAD4EB /* libPods-JSDownloadViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSDownloadViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		546B78571D72E45400BC02B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		5479EF571D75C3FD0008C844 /* JSAnimationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnimationService.h; sourceTree = "<group>"; };
-		5479EF581D75C3FD0008C844 /* JSAnimationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnimationService.m; sourceTree = "<group>"; };
-		5479EF591D75C3FD0008C844 /* JSDownloadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDownloadView.h; sourceTree = "<group>"; };
-		5479EF5A1D75C3FD0008C844 /* JSDownloadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDownloadView.m; sourceTree = "<group>"; };
 		54AEF5191D71789700666A6C /* JSDownloadViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSDownloadViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AEF51D1D71789700666A6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54AEF51F1D71789700666A6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,6 +30,8 @@
 		54AEF5281D71789700666A6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54AEF52B1D71789700666A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54AEF52D1D71789700666A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F531E78BD218EBF4FE76DF /* Pods-JSDownloadViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSDownloadViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSDownloadViewDemo/Pods-JSDownloadViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A9B67E39B6B2FB977A432046 /* Pods-JSDownloadViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSDownloadViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSDownloadViewDemo/Pods-JSDownloadViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,30 +40,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				546B78581D72E45400BC02B9 /* QuartzCore.framework in Frameworks */,
+				25687B9D0E57FBC06FA3B00B /* libPods-JSDownloadViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5479EF561D75C3FD0008C844 /* JSDownloadView */ = {
-			isa = PBXGroup;
-			children = (
-				5479EF571D75C3FD0008C844 /* JSAnimationService.h */,
-				5479EF581D75C3FD0008C844 /* JSAnimationService.m */,
-				5479EF591D75C3FD0008C844 /* JSDownloadView.h */,
-				5479EF5A1D75C3FD0008C844 /* JSDownloadView.m */,
-			);
-			name = JSDownloadView;
-			path = ../../JSDownloadView;
-			sourceTree = "<group>";
-		};
 		54AEF5101D71789700666A6C = {
 			isa = PBXGroup;
 			children = (
 				546B78571D72E45400BC02B9 /* QuartzCore.framework */,
 				54AEF51B1D71789700666A6C /* JSDownloadView */,
 				54AEF51A1D71789700666A6C /* Products */,
+				924AC4356D4E5EB729DD4BD3 /* Pods */,
+				D7EE8A5576C900DB44B083B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,7 +69,6 @@
 		54AEF51B1D71789700666A6C /* JSDownloadView */ = {
 			isa = PBXGroup;
 			children = (
-				5479EF561D75C3FD0008C844 /* JSDownloadView */,
 				54AEF51F1D71789700666A6C /* AppDelegate.h */,
 				54AEF5201D71789700666A6C /* AppDelegate.m */,
 				54AEF5221D71789700666A6C /* ViewController.h */,
@@ -102,6 +90,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		924AC4356D4E5EB729DD4BD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9B67E39B6B2FB977A432046 /* Pods-JSDownloadViewDemo.debug.xcconfig */,
+				94F531E78BD218EBF4FE76DF /* Pods-JSDownloadViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7EE8A5576C900DB44B083B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E7353F0F09507E2C8FAD4EB /* libPods-JSDownloadViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54AEF5301D71789700666A6C /* Build configuration list for PBXNativeTarget "JSDownloadViewDemo" */;
 			buildPhases = (
+				1FCACE293EF2C4239E380BAD /* [CP] Check Pods Manifest.lock */,
 				54AEF5151D71789700666A6C /* Sources */,
 				54AEF5161D71789700666A6C /* Frameworks */,
 				54AEF5171D71789700666A6C /* Resources */,
+				D58E97464B7A9379B7AC2CFF /* [CP] Embed Pods Frameworks */,
+				304812C8FAE68DE94B42D7F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,14 +175,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FCACE293EF2C4239E380BAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		304812C8FAE68DE94B42D7F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSDownloadViewDemo/Pods-JSDownloadViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D58E97464B7A9379B7AC2CFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSDownloadViewDemo/Pods-JSDownloadViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		54AEF5151D71789700666A6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				54AEF5241D71789700666A6C /* ViewController.m in Sources */,
-				5479EF5C1D75C3FD0008C844 /* JSDownloadView.m in Sources */,
-				5479EF5B1D75C3FD0008C844 /* JSAnimationService.m in Sources */,
 				54AEF5211D71789700666A6C /* AppDelegate.m in Sources */,
 				54AEF51E1D71789700666A6C /* main.m in Sources */,
 			);
@@ -286,6 +340,7 @@
 		};
 		54AEF5311D71789700666A6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9B67E39B6B2FB977A432046 /* Pods-JSDownloadViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSDownloadView/Info.plist;
@@ -297,6 +352,7 @@
 		};
 		54AEF5321D71789700666A6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F531E78BD218EBF4FE76DF /* Pods-JSDownloadViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSDownloadView/Info.plist;

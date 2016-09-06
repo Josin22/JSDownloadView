@@ -1,0 +1,5 @@
+target 'JSDownloadViewDemo' do
+
+pod 'JSDownloadView'
+
+end

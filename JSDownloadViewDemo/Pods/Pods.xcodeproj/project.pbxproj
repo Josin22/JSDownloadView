@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F06273E4DF65DC44744AA6F88604981 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		50E3F38BA5ADD0FDE93E47C3A789EC35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		5A6C331CFD97BFACBDE526F65102C5D8 /* JSDownloadView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 436087FF96EC3B355D3A9D8AABC36830 /* JSDownloadView-dummy.m */; };
+		70A1B6385C89D83D3B19C456B8CC02B1 /* JSDownloadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD48E7F74A283C96C3F9BEAA6300CC1 /* JSDownloadView.m */; };
+		71FE0D34A53BAD897FFFCD8A1185D422 /* Pods-JSDownloadViewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99294E714D61078E29824175DF028B04 /* Pods-JSDownloadViewDemo-dummy.m */; };
+		748E1D6A68BF9DC3D0D57808866C7A4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		843AD6413F1F0C9B605139924C6FAC09 /* JSDownloadView.h in Headers */ = {isa = PBXBuildFile; fileRef = FBAE644E55062D7B691AFC733595F12F /* JSDownloadView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B467B733529C712BA9B0B3FAED3E3424 /* JSAnimationService.m in Sources */ = {isa = PBXBuildFile; fileRef = F42CBC2B04CD5A0322541C3FB6F9E8A1 /* JSAnimationService.m */; };
+		C48629AE71C21437536200DC71676DCD /* JSAnimationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 25E3DD7B7B7D4EF9EC2DC24208BEF2B0 /* JSAnimationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C298E3FAA5717C383D07EFA321532E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC1E0113D3F223BC54D5E2E12B1BEE06;
+			remoteInfo = JSDownloadView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DB1A9F5A367451636DBCBBCEB24E8C8 /* libPods-JSDownloadViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSDownloadViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E3DD7B7B7D4EF9EC2DC24208BEF2B0 /* JSAnimationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSAnimationService.h; path = JSDownloadView/JSAnimationService.h; sourceTree = "<group>"; };
+		436087FF96EC3B355D3A9D8AABC36830 /* JSDownloadView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSDownloadView-dummy.m"; sourceTree = "<group>"; };
+		4B214228ECACECE289DE934BFA0C4B40 /* Pods-JSDownloadViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSDownloadViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6618342162C7393B1049043B324CFC86 /* Pods-JSDownloadViewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JSDownloadViewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6AD48E7F74A283C96C3F9BEAA6300CC1 /* JSDownloadView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSDownloadView.m; path = JSDownloadView/JSDownloadView.m; sourceTree = "<group>"; };
+		6AFF774F5842D488286FD327EBB5FC26 /* Pods-JSDownloadViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSDownloadViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		721A8916074DF764395812F6BAAE814B /* Pods-JSDownloadViewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JSDownloadViewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		80C9B84476060EC1F76CC3F259E056F5 /* libJSDownloadView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSDownloadView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99294E714D61078E29824175DF028B04 /* Pods-JSDownloadViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JSDownloadViewDemo-dummy.m"; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A5976F6F042469D9785FD042DA2F94EF /* JSDownloadView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSDownloadView-prefix.pch"; sourceTree = "<group>"; };
+		A60058946972B6EBF6475B1E2A64ACED /* Pods-JSDownloadViewDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JSDownloadViewDemo-resources.sh"; sourceTree = "<group>"; };
+		BC57662FD34246D25352825A2E69334E /* Pods-JSDownloadViewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JSDownloadViewDemo-frameworks.sh"; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F42CBC2B04CD5A0322541C3FB6F9E8A1 /* JSAnimationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSAnimationService.m; path = JSDownloadView/JSAnimationService.m; sourceTree = "<group>"; };
+		F8C5D4129E695CF5CBD2FBD2BC1EC615 /* JSDownloadView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSDownloadView.xcconfig; sourceTree = "<group>"; };
+		FBAE644E55062D7B691AFC733595F12F /* JSDownloadView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSDownloadView.h; path = JSDownloadView/JSDownloadView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F0743B06447DDE5FD3092F27C02C289 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E3F38BA5ADD0FDE93E47C3A789EC35 /* Foundation.framework in Frameworks */,
+				748E1D6A68BF9DC3D0D57808866C7A4C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5C4D0B74EE95E56BA0CE70C0A9D6AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F06273E4DF65DC44744AA6F88604981 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08A819DD77AB8CD697E4F38CECDAD428 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81C536E0D0778A6BD87A4FF247213973 /* JSDownloadView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		18C2CB6C4E6CE8940CDC8AC98DB5E301 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80C9B84476060EC1F76CC3F259E056F5 /* libJSDownloadView.a */,
+				1DB1A9F5A367451636DBCBBCEB24E8C8 /* libPods-JSDownloadViewDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3668B9911DAC974531E6A48655A66D8C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91717A93AF8D805BFB2BC980AD4F1C1C /* Pods-JSDownloadViewDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A17D1728480DB21C70F30EDACEB38D1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8C5D4129E695CF5CBD2FBD2BC1EC615 /* JSDownloadView.xcconfig */,
+				436087FF96EC3B355D3A9D8AABC36830 /* JSDownloadView-dummy.m */,
+				A5976F6F042469D9785FD042DA2F94EF /* JSDownloadView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSDownloadView";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				08A819DD77AB8CD697E4F38CECDAD428 /* Pods */,
+				18C2CB6C4E6CE8940CDC8AC98DB5E301 /* Products */,
+				3668B9911DAC974531E6A48655A66D8C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81C536E0D0778A6BD87A4FF247213973 /* JSDownloadView */ = {
+			isa = PBXGroup;
+			children = (
+				25E3DD7B7B7D4EF9EC2DC24208BEF2B0 /* JSAnimationService.h */,
+				F42CBC2B04CD5A0322541C3FB6F9E8A1 /* JSAnimationService.m */,
+				FBAE644E55062D7B691AFC733595F12F /* JSDownloadView.h */,
+				6AD48E7F74A283C96C3F9BEAA6300CC1 /* JSDownloadView.m */,
+				6A17D1728480DB21C70F30EDACEB38D1 /* Support Files */,
+			);
+			path = JSDownloadView;
+			sourceTree = "<group>";
+		};
+		91717A93AF8D805BFB2BC980AD4F1C1C /* Pods-JSDownloadViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6618342162C7393B1049043B324CFC86 /* Pods-JSDownloadViewDemo-acknowledgements.markdown */,
+				721A8916074DF764395812F6BAAE814B /* Pods-JSDownloadViewDemo-acknowledgements.plist */,
+				99294E714D61078E29824175DF028B04 /* Pods-JSDownloadViewDemo-dummy.m */,
+				BC57662FD34246D25352825A2E69334E /* Pods-JSDownloadViewDemo-frameworks.sh */,
+				A60058946972B6EBF6475B1E2A64ACED /* Pods-JSDownloadViewDemo-resources.sh */,
+				6AFF774F5842D488286FD327EBB5FC26 /* Pods-JSDownloadViewDemo.debug.xcconfig */,
+				4B214228ECACECE289DE934BFA0C4B40 /* Pods-JSDownloadViewDemo.release.xcconfig */,
+			);
+			name = "Pods-JSDownloadViewDemo";
+			path = "Target Support Files/Pods-JSDownloadViewDemo";
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E0579C68FE30FBB2102BE1263889ED3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48629AE71C21437536200DC71676DCD /* JSAnimationService.h in Headers */,
+				843AD6413F1F0C9B605139924C6FAC09 /* JSDownloadView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DDE64CA1B643AF721E9640C6E5AE7DE3 /* Pods-JSDownloadViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F13D275216024857EFC69D5B0D200C /* Build configuration list for PBXNativeTarget "Pods-JSDownloadViewDemo" */;
+			buildPhases = (
+				229B9C531A7710D612A02767BF96EC74 /* Sources */,
+				DC5C4D0B74EE95E56BA0CE70C0A9D6AC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F81AF669B9673F2838F965999894639F /* PBXTargetDependency */,
+			);
+			name = "Pods-JSDownloadViewDemo";
+			productName = "Pods-JSDownloadViewDemo";
+			productReference = 1DB1A9F5A367451636DBCBBCEB24E8C8 /* libPods-JSDownloadViewDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EC1E0113D3F223BC54D5E2E12B1BEE06 /* JSDownloadView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71470BE99B5DF5F6192580CCF1ADFB15 /* Build configuration list for PBXNativeTarget "JSDownloadView" */;
+			buildPhases = (
+				D12C9D10990905F461BD556E58E4DE03 /* Sources */,
+				4F0743B06447DDE5FD3092F27C02C289 /* Frameworks */,
+				E0579C68FE30FBB2102BE1263889ED3B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSDownloadView;
+			productName = JSDownloadView;
+			productReference = 80C9B84476060EC1F76CC3F259E056F5 /* libJSDownloadView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 18C2CB6C4E6CE8940CDC8AC98DB5E301 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC1E0113D3F223BC54D5E2E12B1BEE06 /* JSDownloadView */,
+				DDE64CA1B643AF721E9640C6E5AE7DE3 /* Pods-JSDownloadViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		229B9C531A7710D612A02767BF96EC74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FE0D34A53BAD897FFFCD8A1185D422 /* Pods-JSDownloadViewDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12C9D10990905F461BD556E58E4DE03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B467B733529C712BA9B0B3FAED3E3424 /* JSAnimationService.m in Sources */,
+				5A6C331CFD97BFACBDE526F65102C5D8 /* JSDownloadView-dummy.m in Sources */,
+				70A1B6385C89D83D3B19C456B8CC02B1 /* JSDownloadView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F81AF669B9673F2838F965999894639F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSDownloadView;
+			target = EC1E0113D3F223BC54D5E2E12B1BEE06 /* JSDownloadView */;
+			targetProxy = 3C298E3FAA5717C383D07EFA321532E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3BBF67142E54680025F5463D6C75F293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B214228ECACECE289DE934BFA0C4B40 /* Pods-JSDownloadViewDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46AF6D3FC207E7D9B2AC0F891D8654E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C5D4129E695CF5CBD2FBD2BC1EC615 /* JSDownloadView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSDownloadView/JSDownloadView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		49509E2844A34B67B817297D86661B9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AFF774F5842D488286FD327EBB5FC26 /* Pods-JSDownloadViewDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4A67DEBE933773E302D57721A8CC3EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C5D4129E695CF5CBD2FBD2BC1EC615 /* JSDownloadView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSDownloadView/JSDownloadView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71470BE99B5DF5F6192580CCF1ADFB15 /* Build configuration list for PBXNativeTarget "JSDownloadView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46AF6D3FC207E7D9B2AC0F891D8654E3 /* Debug */,
+				4A67DEBE933773E302D57721A8CC3EA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1F13D275216024857EFC69D5B0D200C /* Build configuration list for PBXNativeTarget "Pods-JSDownloadViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49509E2844A34B67B817297D86661B9B /* Debug */,
+				3BBF67142E54680025F5463D6C75F293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
