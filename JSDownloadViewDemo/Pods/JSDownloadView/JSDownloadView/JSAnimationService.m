@@ -274,7 +274,7 @@ static  NSString *keyPath_ContentW = @"contentsRect.size.width";
     
     CAKeyframeAnimation *lineToSuccessAnimation = [CAKeyframeAnimation animationWithKeyPath:keyPath_Path];
     lineToSuccessAnimation.values = values;
-    lineToSuccessAnimation.duration = .6;
+    lineToSuccessAnimation.duration = .3;
     lineToSuccessAnimation.removedOnCompletion = NO;
     lineToSuccessAnimation.fillMode  = kCAFillModeForwards;
     lineToSuccessAnimation.beginTime = 0;
@@ -286,13 +286,13 @@ static  NSString *keyPath_ContentW = @"contentsRect.size.width";
     successSpring.damping = 10;
     successSpring.mass = 1;
     successSpring.initialVelocity = 0;
-    successSpring.beginTime= 0.60;
+    successSpring.beginTime= 0.30;
     successSpring.removedOnCompletion = NO;
     successSpring.fillMode = kCAFillModeForwards;
     
     CAAnimationGroup *group = [CAAnimationGroup animation];
     group.animations = @[lineToSuccessAnimation,successSpring];
-    group.duration  = 2;
+    group.duration  = .5;
     group.removedOnCompletion = NO;
     group.fillMode  = kCAFillModeForwards;
     

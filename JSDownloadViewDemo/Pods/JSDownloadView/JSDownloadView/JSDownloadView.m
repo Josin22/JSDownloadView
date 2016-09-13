@@ -201,6 +201,8 @@
     _isSuccess = isSuccess;
     
     if (_isSuccess) {
+        [_waveTimer invalidate];
+        _waveTimer = nil;
         //移除label
         [self showProgressLabel:NO];
         //变成对号
@@ -295,7 +297,7 @@
 
 - (void)waveAnimation{
     
-    CGFloat progressWaveHeight = -12.0 * powf(_progress, 2) + 12 * _progress;
+    CGFloat progressWaveHeight = 10.0 * ( _progress - powf(_progress, 2)) ;
     //浪
     [self waveWithHeight:_progress < 0.5 ? _waveHeight : progressWaveHeight];
 }
@@ -323,8 +325,7 @@
     } else if ([self.arrowLayer animationForKey:kSuccessAnimationKey] == anim){
         /* 结束动画 */
         isAnimating = NO;
-        [_waveTimer invalidate];
-        _waveTimer == nil;
+   
         if ([self.delegate respondsToSelector:@selector(animationEnd)]) {
             [self.delegate animationEnd];
         }

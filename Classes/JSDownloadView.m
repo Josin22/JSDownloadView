@@ -324,7 +324,7 @@
         /* 结束动画 */
         isAnimating = NO;
         [_waveTimer invalidate];
-        _waveTimer == nil;
+        _waveTimer = nil;
         if ([self.delegate respondsToSelector:@selector(animationEnd)]) {
             [self.delegate animationEnd];
         }
