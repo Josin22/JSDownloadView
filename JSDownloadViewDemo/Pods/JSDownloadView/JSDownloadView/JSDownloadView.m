@@ -13,6 +13,8 @@
 {
     id _target;
     SEL _action;
+    BOOL isAnimating;
+    NSTimer *_waveTimer;
 }
 //进度圈
 @property (nonatomic, strong) CAShapeLayer *realCircleLayer;
@@ -72,6 +74,8 @@
     self.waveSpeed = 1.0;
     self.waveCurvature = .25;
     self.waveHeight = 3;
+    _progress = 0.0;
+    isAnimating = NO;
     
     self.service = [[JSAnimationService alloc] init];
     self.service.viewRect = self.frame;
@@ -187,33 +191,47 @@
     //进度
     self.realCircleLayer.path = [self.service getCirclePathWithProgress:_progress].CGPath;
 
-    //浪
-    [self wave];
-    
     //label
-    self.progressLabel.text = [NSString stringWithFormat:@"%.2f",progress];
+    self.progressLabel.text = [NSString stringWithFormat:@"%.2f",_progress];
     
-    //结束
-    if (_progress == 1.00) {
+}
+
+- (void)setIsSuccess:(BOOL)isSuccess{
+    
+    _isSuccess = isSuccess;
+    
+    if (_isSuccess) {
         //移除label
         [self showProgressLabel:NO];
         //变成对号
         [self showSuccessAnimation];
+    } else {
+        //失败状态
     }
+    
 }
 
 - (void)stopAllAnimations{
     
+    self.userInteractionEnabled =  NO;
     [self removeProgressLabel];
     [self.verticalLineLayer removeAllAnimations];
     [self.arrowLayer removeAllAnimations];
     if (!self.service.progressPath.empty) {
         [self.service.progressPath removeAllPoints];
         self.realCircleLayer.path = self.service.progressPath.CGPath;
-        
     }
 }
 
+- (void)waveWithHeight:(CGFloat)waveHeight {
+    
+    self.offset += self.waveSpeed;
+    
+    self.arrowLayer.path = [self.service getWavePathWithOffset:self.offset
+                                                    WaveHeight:waveHeight
+                                                 WaveCurvature:self.waveCurvature].CGPath;
+    
+}
 
 #pragma mark - Animation
 
@@ -253,16 +271,6 @@
     }
 }
 
-- (void)wave{
-    
-    self.offset += self.waveSpeed;
-    
-    self.arrowLayer.path = [self.service getWavePathWithOffset:self.offset
-                                                    WaveHeight:self.waveHeight
-                                                 WaveCurvature:self.waveCurvature].CGPath;
-    
-}
-
 - (void)showProgressLabel:(BOOL)isShow{
     
     CASpringAnimation *springAnimation = [self.service getProgressAnimationShow:isShow];
@@ -276,19 +284,20 @@
 
 - (void)showSuccessAnimation{
     
-//    self.arrowLayer.path = self.service.arrowEndPath.CGPath;
-    
-//    CAKeyframeAnimation *animation = [self.service getLineToSuccessAnimationWithValues:@[
-//                                                                                         (__bridge id)self.service.arrowEndPath.CGPath,
-//                                                                                         (__bridge id)self.service.succesPath.CGPath
-//                                                                                         ]];
     CAAnimationGroup *group = [self.service getLineToSuccessAnimationWithValues:@[
                                                                                   (__bridge id)self.service.arrowEndPath.CGPath,
                                                                                   (__bridge id)self.service.succesPath.CGPath
                                                                                   ]];
-    
+    group.delegate = self;
     [self.arrowLayer addAnimation:group forKey:kSuccessAnimationKey];
     
+}
+
+- (void)waveAnimation{
+    
+    CGFloat progressWaveHeight = -12.0 * powf(_progress, 2) + 12 * _progress;
+    //浪
+    [self waveWithHeight:_progress < 0.5 ? _waveHeight : progressWaveHeight];
 }
 
 #pragma mark - Animation Delegate
@@ -297,21 +306,28 @@
 {
     if ([self.verticalLineLayer animationForKey:kLineToPointUpAnimationKey]==anim)
     {
-/*  block 形式点击回调   */
-        
-//        if (self.didClickBlock) {
-//            self.didClickBlock();
-//        }
-        
-/*  UIcontrol 形式响应   */
+        /* 线到点动画结束 */
+        self.userInteractionEnabled =  YES;
+        /* 真正动画开始 */
+        isAnimating = YES;
         //移除当前arrow
         [self removeArrowLayer];
         //显示progress
         [self showProgressLabel:YES];
-        if ([_target respondsToSelector:_action]) {
-            [_target performSelectorOnMainThread:_action withObject:nil waitUntilDone:NO];
+        //浪
+        _waveTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(waveAnimation) userInfo:nil repeats:YES];
+        if ([self.delegate respondsToSelector:@selector(animationStart)]) {
+            [self.delegate animationStart];
         }
         
+    } else if ([self.arrowLayer animationForKey:kSuccessAnimationKey] == anim){
+        /* 结束动画 */
+        isAnimating = NO;
+        [_waveTimer invalidate];
+        _waveTimer == nil;
+        if ([self.delegate respondsToSelector:@selector(animationEnd)]) {
+            [self.delegate animationEnd];
+        }
     }
 }
 
@@ -323,12 +339,11 @@
     [super touchesEnded:touches withEvent:event];
     
     /* 判断点击区域是否在圆内 */
-    
     CGPoint point = [[touches anyObject] locationInView:self];
     point = [self.layer convertPoint:point toLayer:self.maskCircleLayer];
     UIBezierPath *path = [UIBezierPath bezierPathWithCGPath:self.maskCircleLayer.path];
 
-    if ([path containsPoint:point]) {
+    if ([path containsPoint:point]&& !isAnimating) {
         
         [self stopAllAnimations];
         
@@ -338,14 +353,6 @@
 
 }
 
-
-#pragma mark - override
-
-- (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents{
-    
-    _target  = target;
-    _action = action;
-}
 
 
 @end

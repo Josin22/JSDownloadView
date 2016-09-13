@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		25687B9D0E57FBC06FA3B00B /* libPods-JSDownloadViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7353F0F09507E2C8FAD4EB /* libPods-JSDownloadViewDemo.a */; };
+		542115AC1D867C5F002D4FB5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542115AB1D867C5F002D4FB5 /* SystemConfiguration.framework */; };
+		542115AE1D867C9D002D4FB5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542115AD1D867C9D002D4FB5 /* CFNetwork.framework */; };
+		542115B01D867CAC002D4FB5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542115AF1D867CAC002D4FB5 /* Security.framework */; };
+		542115B21D867CB2002D4FB5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542115B11D867CB2002D4FB5 /* MobileCoreServices.framework */; };
+		542115B51D867E7B002D4FB5 /* JSDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 542115B41D867E7B002D4FB5 /* JSDownLoadManager.m */; };
 		546B78581D72E45400BC02B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546B78571D72E45400BC02B9 /* QuartzCore.framework */; };
 		54AEF51E1D71789700666A6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEF51D1D71789700666A6C /* main.m */; };
 		54AEF5211D71789700666A6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEF5201D71789700666A6C /* AppDelegate.m */; };
@@ -19,6 +24,12 @@
 
 /* Begin PBXFileReference section */
 		2E7353F0F09507E2C8FAD4EB /* libPods-JSDownloadViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSDownloadViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		542115AB1D867C5F002D4FB5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		542115AD1D867C9D002D4FB5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		542115AF1D867CAC002D4FB5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		542115B11D867CB2002D4FB5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		542115B31D867E7B002D4FB5 /* JSDownLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDownLoadManager.h; sourceTree = "<group>"; };
+		542115B41D867E7B002D4FB5 /* JSDownLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDownLoadManager.m; sourceTree = "<group>"; };
 		546B78571D72E45400BC02B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		54AEF5191D71789700666A6C /* JSDownloadViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSDownloadViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AEF51D1D71789700666A6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,6 +50,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542115B21D867CB2002D4FB5 /* MobileCoreServices.framework in Frameworks */,
+				542115B01D867CAC002D4FB5 /* Security.framework in Frameworks */,
+				542115AE1D867C9D002D4FB5 /* CFNetwork.framework in Frameworks */,
+				542115AC1D867C5F002D4FB5 /* SystemConfiguration.framework in Frameworks */,
 				546B78581D72E45400BC02B9 /* QuartzCore.framework in Frameworks */,
 				25687B9D0E57FBC06FA3B00B /* libPods-JSDownloadViewDemo.a in Frameworks */,
 			);
@@ -73,6 +88,8 @@
 				54AEF5201D71789700666A6C /* AppDelegate.m */,
 				54AEF5221D71789700666A6C /* ViewController.h */,
 				54AEF5231D71789700666A6C /* ViewController.m */,
+				542115B31D867E7B002D4FB5 /* JSDownLoadManager.h */,
+				542115B41D867E7B002D4FB5 /* JSDownLoadManager.m */,
 				54AEF5281D71789700666A6C /* Assets.xcassets */,
 				54AEF5251D71789700666A6C /* Main.storyboard */,
 				54AEF52A1D71789700666A6C /* LaunchScreen.storyboard */,
@@ -102,6 +119,10 @@
 		D7EE8A5576C900DB44B083B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				542115B11D867CB2002D4FB5 /* MobileCoreServices.framework */,
+				542115AF1D867CAC002D4FB5 /* Security.framework */,
+				542115AD1D867C9D002D4FB5 /* CFNetwork.framework */,
+				542115AB1D867C5F002D4FB5 /* SystemConfiguration.framework */,
 				2E7353F0F09507E2C8FAD4EB /* libPods-JSDownloadViewDemo.a */,
 			);
 			name = Frameworks;
@@ -231,6 +252,7 @@
 				54AEF5241D71789700666A6C /* ViewController.m in Sources */,
 				54AEF5211D71789700666A6C /* AppDelegate.m in Sources */,
 				54AEF51E1D71789700666A6C /* main.m in Sources */,
+				542115B51D867E7B002D4FB5 /* JSDownLoadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
