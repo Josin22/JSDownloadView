@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/platform-ios-green.svg
 )](https://github.com/josin22/JSDownloadView)
 [![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)](https://raw.githubusercontent.com/josin22/JSDownloadView/master/LICENSE)
-[![CocoaPods Compatible](https://img.shields.io/badge/pod-v1.0-orange.svg)](https://github.com/josin22/JSDownloadView)
+[![CocoaPods Compatible](https://img.shields.io/badge/pod-1.1.0-red.svg)](https://github.com/josin22/JSDownloadView)
 [![CocoaPods Compatible](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/josin22/JSDownloadView)
 
 
@@ -51,9 +51,16 @@
 # 代码实现 
 
 ## 基本实现想法
-1.自定义UIControl类,因为它本身就是UIView子类,做点击事件的View再好不过.(另一种方式用block点击回调)
+
+~~1.自定义UIControl类,因为它本身就是UIView子类,做点击事件的View再好不过.(另一种方式用block点击回调)~~
+
+1.使用代理,继承UIView.
+
 2.点击区域是否在圆内判断
+
 3.两个CAShapeLayer圆环+(一个CAShapeLayer箭头和CAShapeLayer竖线)组合成箭头+label
+
+
 4.一个service类管理创建所用到的path和animation
 
 
@@ -175,43 +182,67 @@
 	 */
 	@property (nonatomic, assign) CGFloat progressWidth;
 	/**
-	 *  停止动画
+	 *  是否下载成功
 	 */
-	- (void)stopAllAnimations;
+	@property (nonatomic, assign) BOOL isSuccess;
 	/**
-	 *  block 形式点击回调
+	 *  委托代理
 	 */
-	//@property (nonatomic, strong) void (^ didClickBlock)();
+	@property (nonatomic, weak) id<JSDownloadAnimationDelegate> delegate;
 ### 所有方法预览
 ![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download_all.png)
+
+
+### 代理
+
+	@protocol JSDownloadAnimationDelegate <NSObject>
+	
+	@required
+	- (void)animationStart;
+	
+	@optional
+	- (void)animationSuspend;
+	
+	- (void)animationEnd;
+	
+	@end
+
 
 方法比较多,在这不一一展示了,有感兴趣的童鞋可以直接去[github下载](https://github.com/Josin22/JSDownloadView),记得点个星星哦~~~😜
 
 ## 调用
-添加事件
+使用全真网络下载
 
-	[downloadView addTarget:self action:@selector(updateProgress) forControlEvents:UIControlEventTouchUpInside];
-或者block回调
-
-	//        downloadView.didClickBlock = ^{
-	//            
-	//            _timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(timeDown) userInfo:nil repeats:YES];
-	//        };
+	- (void)downTask{
 	
-这里模拟网络请求数据
-
-	// 模拟网络请求数据进度
-	- (void)timeDown{
-	    _timeCount -= 1;
-	    _progress += 0.005;
-	    self.downloadView.progress  = _progress;
+	    //1M
+	//    NSString*url = @"http://obh6cwxkc.bkt.clouddn.com/146621166967.jpg";
+	    //26M
+	    NSString*url = @"http://obh6cwxkc.bkt.clouddn.com/iStat%20Menus.app.zip";
+	    //文件比较大  200M
+	//    NSString*url = @"http://obh6cwxkc.bkt.clouddn.com/Command_Line_Tools_OS_X_10.11_for_Xcode_7.3.1.dmg";
 	    
-	    if (_timeCount <= 0) {
-	        
-	        [self initData];
-	        [_timer invalidate];
-	        _timer = nil;
-	    }
+	    [self.manager downloadWithURL:url
+	                         progress:^(NSProgress *downloadProgress) {
+	                        
+	                             dispatch_async(dispatch_get_main_queue(), ^{
+	                                 NSString *progressString  = [NSString stringWithFormat:@"%.2f",1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount];
+	                                 self.downloadView.progress = progressString.floatValue;
+	                             });
+	                             
+	                         }
+	                             path:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
+	                                 //
+	                                 NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+	                                 NSString *path = [cachesPath stringByAppendingPathComponent:response.suggestedFilename];
+	                                 return [NSURL fileURLWithPath:path];
+	                             }
+	                       completion:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
+	                           //此时已在主线程
+	                           self.downloadView.isSuccess = YES;
+	                           NSString *path = [filePath path];
+	                           NSLog(@"************文件路径:%@",path);
+	                       }];
 	}
 
 
@@ -222,5 +253,43 @@
 ![images](https://raw.githubusercontent.com/Josin22/JSDownloadView/master/JSDownloadViewDemo/Source/download_animation.gif)
 
 
+# Release notes
 
-# 
+Version 1.1.0
+
+* 使用代理委托,取消继承uicontro,利用代理观察事件触发
+* 优化动画,抽离波浪动画,单独利用定时器动画.
+* 真实模拟网络数据下载
+
+
+Version 1.0
+
+* 1.0版下载动画
+
+
+# MIT License
+MIT License
+
+Copyright (c) 2016 乔同X
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+
