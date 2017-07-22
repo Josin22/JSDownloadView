@@ -192,7 +192,7 @@
     self.realCircleLayer.path = [self.service getCirclePathWithProgress:_progress].CGPath;
 
     //label
-    self.progressLabel.text = [NSString stringWithFormat:@"%.2f",_progress];
+    self.progressLabel.text = [NSString stringWithFormat:@"﹪%.0f",_progress*100];
     
 }
 

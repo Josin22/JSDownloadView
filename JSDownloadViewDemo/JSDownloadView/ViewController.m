@@ -63,9 +63,9 @@
     //1M
 //    NSString*url = @"http://obh6cwxkc.bkt.clouddn.com/146621166967.jpg";
     //26M
-    NSString*url = @"http://obh6cwxkc.bkt.clouddn.com/iStat%20Menus.app.zip";
+//    NSString*url = @"http://obh6cwxkc.bkt.clouddn.com/iStat%20Menus.app.zip";
     //文件比较大  200M
-//    NSString*url = @"http://obh6cwxkc.bkt.clouddn.com/Command_Line_Tools_OS_X_10.11_for_Xcode_7.3.1.dmg";
+    NSString*url = @"http://sw.bos.baidu.com/sw-search-sp/software/e81362253956d/thunder_mac_3.1.0.2968.dmg";
     
     [self.manager downloadWithURL:url
                          progress:^(NSProgress *downloadProgress) {
